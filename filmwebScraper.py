@@ -57,7 +57,7 @@ def populate_dct(key, dct: dict, *vals) -> None:
 	else:
 		dct[key] += vals
 
-def get_actor_rating(soup: BeautifulSoup) -> typing.Iterable[str, str]:
+def get_actor_rating(soup: BeautifulSoup) -> typing.Iterable[str]:
 	"""helper function extracting from HTML DOM rating and number of votes
 	based on which rating was derived.
 	Args:
